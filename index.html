@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wedding Party Invitation</title>
+        <meta name="description" content="私たちの盛大な結婚式に是非ご招待させて下さい！">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="./images/icon.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <button id="hmb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="menu-panel">
+                <ul class="menu-list">
+                    <li><a href="./index.html">Top</a></li>
+                    <li><a href="index.html#msg-area">Message</a></li>
+                    <li><a href="index.html#profile-area">Profile</a></li>
+                    <li><a href="index.html#date-area">Date</a></li>
+                    <li><a href="index.html#form-area">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="particle-container">
+            <h1 class="main-visual">
+                <img src="./images/wedding party.png" alt="Wedding Party">
+            </h1>
+
+            <section id="msg-area" class="wrapper fadein">
+                <h2 class="section-title">Message</h2>
+                <p>
+                    大切なみなさんに囲まれて、笑顔あふれる一日を過ごせたら嬉しいです。<br>
+                    感謝の気持ちを込めて、ささやかなパーティーをご用意しました。
+                </p>
+            </section>
+
+            <section id="profile-area" class="wrapper">
+                <h2 class="section-title">Profile</h2>
+                <div class="onlyPC-flex">
+                    <div class="inner">
+                        <img src="./images/groom.jpg" alt="新郎">
+                        <h3 class="fadein">groom:太郎</h3>
+                        <dl class="fadein">
+                            <dt>birthday</dt><dd>1990年1月1日</dd>
+                            <dt>from</dt><dd>福岡県</dd>
+                            <dt>work</dt><dd>現在は医療機関にて広報・コミュニケーション業務に従事しております。</dd>
+                            <dt>character</dt><dd>誠実で思いやりのある性格で、周囲との信頼関係を大切にしています。</dd>
+                        </dl>
+                    </div>
+                    <div class="inner">
+                        <img src="./images/bride.jpg" alt="新婦">
+                        <h3 class="fadein">bride:花子</h3>
+                        <dl class="fadein">
+                            <dt>birthday</dt><dd>1990年12月31日</dd>
+                            <dt>from</dt><dd>東京都</dd>
+                            <dt>work</dt><dd>教育関連の仕事に携わり、日々子どもたちと向き合っています。</dd>
+                            <dt>character</dt><dd>穏やかで芯の強い性格で、互いに支え合える関係を築いてまいりました。</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <section id="date-area" class="wrapper">
+                <h2 class="section-title">Save the Date</h2>
+                <div class="fadein onlyPC-flex">
+                    <img src="./images/wedding reception.jpg" alt="披露宴会場">
+                    <p class="date-detail">
+                        3025.7.7 Thu<br>
+                        Start 18:30-
+                    </p>
+                </div>
+                <h3>Access</h3>
+                <div class="access">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6002309597425!2d130.41815247569681!3d33.589727473334634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c7e6f9b375%3A0x2ee22b3d45b98b90!2z5Y2a5aSa6aeF!5e0!3m2!1sja!2sjp!4v1751905698838!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>
+                        〒123-4567<br>
+                        福岡県福岡市博多区博多駅123-123<br>
+                        <a href="tel:123XXXXXXX">電話番号：123-XXX-XXX</a>
+                    </p>
+                </div>
+            </section>
+
+            <section id="form-area">
+                <h2>Form</h2>
+                <form action="" method="post">
+                    <p class="attendRadio">
+                        <label><input type="radio" name="attend" value="ご出席" checked="checked">ご出席</label>
+                        <label><input type="radio" name="attend" value="ご欠席">ご欠席</label>
+                    </p>
+                    <p>お名前<input type="text" name="user_name"></p>
+                    <p>メールアドレス<input type="email" name="user_mail"></p>
+                    <p>
+                        ご関係について
+                        <select name="user_relations">
+                            <option value="" selected disabled>お選びください</option>
+                            <option value="新郎親族">新郎親族</option>
+                            <option value="新郎友人">新郎友人</option>
+                            <option value="新郎職場関係者">新郎職場関係者</option>
+                            <option value="新婦親族">新婦親族</option>
+                            <option value="新婦友人">新婦友人</option>
+                            <option value="新婦職場関係者">新婦職場関係者</option>
+                        </select>
+                    </p>
+                    <p class="allergyCheck">
+                        アレルギー<br>
+                        <label><input type="checkbox" name="allergy" value="卵">卵</label>
+                        <label><input type="checkbox" name="allergy" value="乳">乳</label>
+                        <label><input type="checkbox" name="allergy" value="小麦">小麦</label>
+                        <label><input type="checkbox" name="allergy" value="大豆">大豆</label>
+                        <label><input type="checkbox" name="allergy" value="魚貝類">魚貝類</label>
+                    </p>
+                    <p>メッセージ<textarea name="message"></textarea></p>
+                    <p class="submitBtn"><input type="submit" value="Send"></p>
+                </form>
+            </section>                        
+        </main>
+
+        <footer id="footer">
+            <div class="inner onlyPC-flex">
+                <p>
+                    〒123-4567<br>
+                    福岡県福岡市博多区博多駅123-123<br>
+                    <a href="tel:123XXXXXXX">電話番号：123-XXX-XXX</a>
+                </p>
+                <ul>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    <li><a href="terms.html">利用規約</a></li>
+                </ul>
+            </div>
+            <p class="copyright"><small>&copy;wedding invitations</small></p>
+        </footer>
+    </body>
+</html>
