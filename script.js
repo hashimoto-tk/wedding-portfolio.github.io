@@ -1,5 +1,19 @@
+// モーダル画面---------------------------------------------------------
+const modal = document.querySelector('#portfolio-modal');
+const closeBtn = document.querySelector('#modal-close');
+
 document.addEventListener('DOMContentLoaded', function() {
-    alert('このサイトは学習目的で制作した架空サイトです。実在の企業とは関係ありません。');
+  // 初回のみ表示
+    if (!sessionStorage.getItem('portfolioModalShown')) {
+        modal.classList.add('active');
+        document.body.classList.add('modal-open');
+    }
+  // 閉じる
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        sessionStorage.setItem('portfolioModalShown', 'true');
+    });
 });
 
 // ハンバーガーメニュー---------------------------------------------------------
